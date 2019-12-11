@@ -34,25 +34,12 @@
         <link rel="shortcut icon" href="<?=$assets_location_prefix?>img/phplibrary-icon.png" type="image/png">
         <title><?=$name?></title>
         <meta content="<?=$name?>" property="og:title">
-        <meta content="<?=$name?> is set of classes containing most useful methods and variables for Web Development" name="description">
-        <!-- jQuery Load -->
-        <script src="<?=$assets_location_prefix?>js/jquery.min.js"></script>
-        <!-- Flatdoc -->
-        <script src="<?=$assets_location_prefix?>js/legacy.js"></script>
-        <script src="<?=$assets_location_prefix?>js/flatdoc.js"></script>
+        <meta content="<?=$name?> is a set of classes that contain the most useful attributes and methods that facilitate the development of Web applications" name="description">
         <!-- Flatdoc theme -->
         <link href="<?=$assets_location_prefix?>css/style.css" rel="stylesheet">
-        <script src="<?=$assets_location_prefix?>js/script.js"></script>
         <link href="<?=$assets_location_prefix?>css/theme.css" rel="stylesheet">
-        <script src="<?=$assets_location_prefix?>js/theme.js"></script>
         <!-- Custom PHP Library style -->
         <link href="<?=$assets_location_prefix?>css/custom.css" rel="stylesheet">
-        <!-- Initializer -->
-        <script>
-            Flatdoc.run({
-                fetcher: Flatdoc.github("<?=$repository?>")
-            });
-        </script>
     </head>
     <body role="flatdoc" class="big-h3 large-brief">
         <!-- TITLE -->
@@ -92,5 +79,19 @@
             </div>
             <div role="flatdoc-content" class="content"></div>
         </div>
+        <!-- jQuery Load -->
+        <script src="<?=$assets_location_prefix?>js/jquery.min.js"></script>
+        <!-- Flatdoc -->
+        <script src="<?=$assets_location_prefix?>js/legacy.js"></script>
+        <script src="<?=$assets_location_prefix?>js/flatdoc.js"></script>
+        <!-- Flatdoc script -->
+        <script src="<?=$assets_location_prefix?>js/script.js"></script>
+        <script src="<?=$assets_location_prefix?>js/theme.js"></script>
+        <!-- Initializer -->
+        <script>
+            Flatdoc.run({
+                fetcher: Flatdoc.github("<?=$repository?>")
+            });
+        </script>
     </body>
 </html>
