@@ -2,16 +2,16 @@
     $name = 'PHP Library';
     $repository = '90zlaya/php-library';
     $location_prefix = basename(getcwd()) === 'assets' ? './' : './assets/';
-    $links = [
-        'on_github'    => [
+    $links = array(
+        'on_github'    => array(
             'name' => 'View on GitHub',
             'url'  => 'https://github.com/' . $repository
-        ],
-        'on_packagist' => [
+        ),
+        'on_packagist' => array(
             'name' => 'View on Packagist',
             'url'  => 'https://packagist.org/packages/' . $repository
-        ]
-    ];
+        )
+    );
 ?>
 <!DOCTYPE html>
 <html lang="en">
