@@ -3,13 +3,13 @@
     $repository = '90zlaya/php-library';
     $location_prefix = basename(getcwd()) === 'assets' ? './' : './assets/';
     $links = array(
-        'on_github'    => array(
+        'on_github' => array(
             'name' => 'View on GitHub',
-            'url'  => 'https://github.com/' . $repository
+            'url' => 'https://github.com/' . $repository
         ),
         'on_packagist' => array(
             'name' => 'View on Packagist',
-            'url'  => 'https://packagist.org/packages/' . $repository
+            'url' => 'https://packagist.org/packages/' . $repository
         )
     );
 ?>
@@ -26,36 +26,36 @@
     <link href="https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/style.css" rel="stylesheet">
     <link href="https://ricostacruz.com/flatdoc/support/theme.css" rel="stylesheet">
     <style>
-      :root { --php-library-color: #08a5cd; }
-      a,
-      a.big.button,
-      a.big.button:visited,
-      .menu a,
-      .menu a.active:after,
-      .menu a:visited,
-      .menu a.level-1,
-      .menu a.level-1:visited,
-      .content i,
-      .content em,
-      .content blockquote,
-      .content h4,
-      .content h5,
-      .content .small-heading,
-      .content .button + em,
-      .header h1,
-      .header li a,
-      .header h1 a,
-      .header h1 a:visited,
-      body:not(.big-h3) .content h3 { color: var(--php-library-color); }
-      .button { border: solid 2px var(--php-library-color); color: #fff; }
-      .button:visited, a.big.button:hover { background: var(--php-library-color); }
-      a.big.button { border: solid 3px var(--php-library-color); }
-      .content ul > li:before { border: solid 1px var(--php-library-color); }
-      .title-card h1 { font-family: montserrat, sans-serif; }
-      .title-image { background-image: url('<?=$location_prefix?>img/background.jpg'); }
-      @media only screen and (max-width: 768px) {
-        .content h1::before, .content h2::before, .content .big-heading::before, body.big-h3 .content h3::before { max-width: 100%; left: auto; }
-      }
+        :root { --php-library-color: #08a5cd; }
+        a,
+        a.big.button,
+        a.big.button:visited,
+        .menu a,
+        .menu a.active:after,
+        .menu a:visited,
+        .menu a.level-1,
+        .menu a.level-1:visited,
+        .content i,
+        .content em,
+        .content blockquote,
+        .content h4,
+        .content h5,
+        .content .small-heading,
+        .content .button + em,
+        .header h1,
+        .header li a,
+        .header h1 a,
+        .header h1 a:visited,
+        body:not(.big-h3) .content h3 { color: var(--php-library-color); }
+        .button { border: solid 2px var(--php-library-color); color: #fff; }
+        .button:visited, a.big.button:hover { background: var(--php-library-color); }
+        a.big.button { border: solid 3px var(--php-library-color); }
+        .content ul > li:before { border: solid 1px var(--php-library-color); }
+        .title-card h1 { font-family: montserrat, sans-serif; }
+        .title-image { background-image: url('<?=$location_prefix?>img/background.jpg'); }
+        @media only screen and (max-width: 768px) {
+            .content h1::before, .content h2::before, .content .big-heading::before, body.big-h3 .content h3::before { max-width: 100%; left: auto; }
+        }
     </style>
 </head>
 <body role="flatdoc" class="big-h3 large-brief">
@@ -72,8 +72,7 @@
             <h1><?=$name?></h1>
             <ul>
                 <?php
-                    foreach ($links as $link)
-                    {
+                    foreach ($links as $link) {
                         echo '<li><a href="';
                         echo $link['url'];
                         echo '" target="_blank" rel="noopener">';
